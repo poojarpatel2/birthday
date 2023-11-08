@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <body id="index"></body>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('vintage.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Handwriting', sans-serif;
+        }
+
+        .images-container {
+            text-align: center;
+        }
+
+        .images-container img {
+            margin: 5px;
+            max-width: 80px;
+            max-height: 80px;
+        }
+
+        .access-button {
+            text-align: center;
+        }
+
+        .access-button button {
+            padding: 15px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            text-decoration: none;
+            background-color: #5f9ea0;
+            border: none;
+            border-radius: 15px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .access-button button:hover {
+            background-color: #5F9EA0;
+        }
+
+        .access-button button:active {
+            background-color: #5F9EA0;
+            transform: translateY(4px);
+        }
+
+        /* Add your CSS styles for the password prompt here */
+    </style>
+</head>
+<body>
+    <div class="images-container">
+        <img src="F.JPG" alt="F">
+        <img src="O.JPG" alt="O">
+        <img src="R.JPG" alt="R">
+        <img src="M.JPG" alt="M" style="margin-right: 10px; margin-left: 40px;">
+        <img src="Y.JPG" alt="Y">
+        <br>
+        <img src="B.JPG" alt="B">
+        <img src="O.JPG" alt="O">
+        <img src="T.JPG" alt="T">
+    </div>
+
+    <div class="access-button">
+        <button id="submit-password-button">Access</button>
+    </div>
+
+    <script>
+        // Add an event listener to the button to navigate to "passwords.html" on click
+        document.getElementById("submit-password-button").addEventListener("click", function() {
+            window.location.href = "password.html";
+        });
+    </script>
+</body>
+</html>

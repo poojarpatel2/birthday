@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <body id="home"></body>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-image: url('page.JPG'); /* Add the background image */
+            background-size: cover; /* Ensure the image covers the container */
+            background-position: center; /* Center the background image */
+        }
+
+        .scrapbook-page {
+            background-color: #EDEADE;
+            border: 10px solid #E9D1AD;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #c94a42;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #E9DCC9;
+            text-decoration: none;
+            background-color: #AA4A44;
+            border: none;
+            border-radius: 15px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: #A52A2A;
+        }
+
+        .button:active {
+            background-color: #A52A2A;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="scrapbook-page">
+            <h1>Happy Birthday Shiv!</h1>
+            <div class="button-container">
+                <a href="letters.html" class="button">Letters</a>
+                <a href="pictures.html" class="button">Pictures</a>
+                <a href="songs.html" class="button">Songs</a> <!-- Added the equal sign here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

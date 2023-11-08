@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('scrapbook.jpeg'); /* Set the background image to "scrapbook.jpeg" */
+            background-size: 50%; /* Scale the background image to fit the viewport, maintaining aspect ratio */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            background-attachment: fixed; /* Fixed background */
+            background-position: center; /* Center the background image */
+            background-color: #fff3e2;
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            margin: 0;
+            color: #c94a42; /* Set the text color */
+        }
+
+        .letter {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 25px;
+            background: transparent; /* Make the background transparent */
+            border: none; /* Remove the border */
+        }
+
+        .heart {
+            color: #c94a42;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter">
+        <h1>Hey Shivli,</h1>
+        <div id="typedText"></div> <!-- Use a div for separate paragraphs -->
+    </div>
+
+   
+    <audio controls>
+        <source src="I Wanna Be Yours.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        const textToType = ` So basically I coded you a little website.
+        I know it's not all that, it was more for me 
+        to geek over despite it being rather simple
+        but here it is lolz. It took me a month to make not going to lie and I still 
+        could not figure out the code on how to fix the pictures portion.
+        Anyways, I hope you have the most amazing 21st birthday ever!! Crazy to think 
+        that we've known each other since we were 16, time has flew. Okay so I'm 
+        about to say some nice things ig so don't cringe at it or else I'm going to be 
+        embarassed. We have been through a lot but I truly believe all of that has just
+        made us stronger. There is a reason why despite everything, I am led back to you.
+        You always ask me why I like you and I just say it's because you're patient but 
+        something as small as that is so necessary for me. I'm not going to say you're 
+        not impatient because you literally are but you are patient with me. You talk
+        things out, you don't let me just shut you out and I really do appreciate that. 
+        You are truly the kindest soul I know, an optimist, and believer which is so admirable.
+        You care for your friends, family, and me so deeply and I just need you to know that
+        is acknowledged and valued. I look forward talking to you everyday, and even with 
+        the distance between us I do not feel the lack of love you withold. I look forward
+        to the day that the distance is no longer there. I cherish every moment we share, 
+        our laughter, our shared dreams, and even our moments of vulnerability.
+        The way you try to understand me and do understand me, the way you make me feel 
+        seen is something I have never experienced before. You have a way of filling
+        spaces in my heart that I didn't even know were empty. With you, I feel complete.
+        I truly hope you have the best birthday ever, I don't know anyone else that deserves 
+        it more than you. 
+                        From your bot,
+                                        -P`;
+
+        const paragraphs = textToType.split('\n'); // Split the text into paragraphs
+        const typedText = document.getElementById("typedText");
+        let index = 0;
+
+        function typeText() {
+            if (index < paragraphs.length) {
+                const words = paragraphs[index].split(' '); // Split the paragraph into words
+                typeWords(words, 0);
+                index++;
+            }
+        }
+
+        function typeWords(words, wordIndex) {
+            if (wordIndex < words.length) {
+                typedText.innerHTML += words[wordIndex] + ' ';
+                setTimeout(function () {
+                    typeWords(words, wordIndex + 1);
+                }, 80); // Slightly slower typing speed (adjust as needed)
+            } else {
+                typedText.innerHTML += '<br>'; // Add a line break after each paragraph
+                setTimeout(typeText, 80); // Start typing the next paragraph
+            }
+        }
+
+        typeText(); // Start typing when the page loads
+    </script>
+</body>
+</html>
+
