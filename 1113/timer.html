@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>July 1st, 2019, 2:24 AM to now & forever</title>
+    <style>
+        body {
+            background-color: #fff2cc; /* Cream color background */
+            background-image: url('timerback.jpeg'); /* Set the background image */
+            background-size: 50%; /* Set the background image size to 50% of the body */
+            background-position: center top; /* Center the background image horizontally and position it at the top */
+            background-repeat: no-repeat; /* Prevent image tiling */
+            font-family: 'CityLight Dots', cursive;
+            color: #c94a42; /* Font color in c94a42 */
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .rounded-rectangle {
+            background-color: rgb(248, 250, 234 ); /* Light cream-colored rectangle */
+            border-radius: 20px; /* Rounded rectangle */
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            text-decoration: underline;
+        }
+        p#timer {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="rounded-rectangle">
+        <h1>July 1st, 2019, 2:24 AM to now & forever</h1>
+        <p id="timer"></p>
+    </div>
+
+    <script>
+        // Set the target date and time (July 1st, 2019, 2:24 AM)
+        const targetDate = new Date("2019-07-01T02:24:00").getTime();
+
+        // Update the timer every second
+        const timerInterval = setInterval(function() {
+            // Get the current date and time
+            const currentDate = new Date().getTime();
+
+            // Calculate the time difference
+            const timeDifference = currentDate - targetDate;
+
+            // Calculate the days, hours, minutes, and seconds
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            // Display the timer
+            const timerElement = document.getElementById("timer");
+            timerElement.innerHTML = `Time Passed: ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+
+        }, 1000); // Update the timer every second
+        
+    </script>
+</body>
+</html>
+
+
+
+
+

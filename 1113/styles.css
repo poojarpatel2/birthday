@@ -1,0 +1,140 @@
+body {
+    #index {
+    background-color: #ffeed9; /* Pale yellow background */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Nostalgic font */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('vintage.jpg'); /* Set the background image */
+    background-size: cover; /* Scale the background image to cover the entire screen */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+}
+
+
+
+
+.images-container {
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to push the images up */
+}
+
+.images-container img {
+    margin: 5px;
+    max-width: 80px; /* Set a maximum width for the images */
+    max-height: 80px; /* Set a maximum height for the images */
+}
+
+.access-button {
+    text-align: center;
+}
+
+.access-button button {
+    padding: 15px 25px;
+    font-size: 16px; /* Font size for the button */
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: #5f9ea0;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.access-button button:hover {
+    background-color: #5F9EA0;
+}
+
+.access-button button:active {
+    background-color: #5F9EA0;
+    transform: translateY(4px);
+}
+
+/* Password Prompt Styles */
+.scrapbook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.scrapbook-page {
+    background-color: #fff; /* White paper background */
+    border: 10px solid #f7dcd3; /* Torn paper border */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Page shadow */
+}
+
+h2 {
+    font-size: 24px;
+    color: #c94a42; /* Vintage red color for the title */
+}
+
+.password-container {
+    margin-top: 20px;
+}
+
+input[type="password"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #5f9ea0; /* Teal border for the input */
+    border-radius: 10px;
+}
+
+#submit-password-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: #5f9ea0; /* Teal button background */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #466c6b; /* Button shadow */
+    margin: 10px;
+}
+
+#submit-password-button:hover {
+    background-color: #5F9EA0; /* Darker teal on hover */
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff; /* Set a background color */
+}
+
+.background-image {
+    background-image: url('abstract.jpeg');
+    background-size: contain; /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    width: 50%; /* Adjust the width to control the size */
+    height: 50%; /* Adjust the height to control the size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #home {
+        background-image: url('page.JPG');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+   

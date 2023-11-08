@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .password-container {
+            text-align: center;
+        }
+
+        .password-container h2 {
+            font-size: 24px;
+        }
+
+        /* Add your CSS styles for the password prompt here */
+    </style>
+</head>
+<body>
+    <div class="password-container">
+        <h2>Password Required</h2>
+        <input type="password" id="password-input" placeholder="Enter Password">
+        <button id="submit-password-button">Submit</button>
+    </div>
+
+    <!-- Your script for validating the password and redirecting to homepage.html -->
+    <script>
+        document.getElementById("submit-password-button").addEventListener("click", function() {
+            const enteredPassword = document.getElementById("password-input").value;
+            const correctPassword = "bot"; // Password
+
+            if (enteredPassword === correctPassword) {
+                // Correct password, redirect to homepage.html
+                window.location.href = "homepage.html";
+            } else {
+                // Incorrect password, display an error message
+                alert("Incorrect password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
+
